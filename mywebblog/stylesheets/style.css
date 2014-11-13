@@ -1,0 +1,60 @@
+/**{
+    border: 1px solid red !important;
+}*/
+.bg2 {
+	background-color: white;
+}
+
+.bg1 {
+	background-color: #E8E8E7;
+}
+
+.bg3 {
+	background-color: #8BCC98;
+	padding: 0px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.hrcolor {
+	height: 10px;
+	color: #8BCC98;
+}
+
+*{
+	font-family: 'Lato', sans-serif;
+}
+
+.bgimg {
+	width: 1170px;
+	height: 300px;
+	background-image: url('/images/blur.jpg');	
+}
+
+.txt-color {
+	color: white;
+}
+
+.borderbox {	
+	border: 2px solid white;
+}
+
+.alignment {
+	display: flex;
+	align-items: center;
+}
+
+.art-body {
+      font-size: 17px;
+      color: #7C8B88;
+    }
+
+.art-date {
+      color: #7C8B88;
+      float: right;
+    }
+
+.art-title1 {
+      color: #7C8B88;
+      float: left;
+  	} 

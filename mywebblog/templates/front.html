@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Welcome to My Amazing Blog</title>
+</head>
+
+<style type="text/css">
+    body {
+      font-family: sans-serif;
+      width: 800px;
+      margin: 0 auto;
+      padding: 10px;
+      color: #555;
+    }
+
+    hr {
+      margin: 20px auto;
+      color: #7C8B88;
+
+    }
+
+    h1 {
+      color: white;
+      background-color: #33bebe;
+    }
+
+    .art-title {
+
+      color: #7C8B88;
+      text-align: right;
+    }
+
+    .art-title1 {
+
+      color: #7C8B88;
+
+    }
+
+    .art + .art {
+      margin-top: 20px;
+
+    }
+
+    .art-body {
+      margin: 0;
+      font-size: 17px;
+      color: #7C8B88;
+
+    }
+
+    .screenshot {
+	  max-width: 460px;
+	  margin-right: 180px;
+    }
+</style>
+<body>
+<h1>Welcome to My Amazing Blog</h1>
+<br>
+<a href="/newpost"><h2>submit post</h2></a>
+
+<!--
+<div class="screenshot"><img src="http://abacusit.net/wp-content/themes/ventura/images/headers/Grey-Bokeh.jpg"></div>
+-->
+
+
+
+<hr>
+
+{% for art in posts %}
+    <div class="art">
+        <div class="art-title1">{{art.subject}}</div>
+        <div class="art-title">{{art.created.strftime("%b, %d, %Y")}}</div>
+        <br>
+        <pre class="art-body">{{art.content}}</pre>
+    </div>
+<hr>
+{% endfor %}
+</body>
+</html>

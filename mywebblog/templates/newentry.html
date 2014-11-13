@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Welcome to My Amazing Blog</title>
+</head>
+
+<style type="text/css">
+    body {
+      font-family: sans-serif;
+      width: 800px;
+      margin: 0 auto;
+      padding: 10px;
+    }
+
+    hr {
+      margin: 20px auto;
+    }
+
+    .art + .art {
+      margin-top: 20px;
+    }
+
+    .art-body {
+      margin: 0;
+      font-size: 17px;
+      color: #7C8B88;
+    }
+
+    .art-title {
+      color: #7C8B88;
+    }
+
+     h1 {
+      color: white;
+      background-color: #8BCC98;
+    }
+</style>
+<body>
+<h1>Thank you for submitting</h1>
+<br>
+<a href="/"><h5>home</h5></a>
+
+
+<hr>
+
+
+    <div class="art">
+        <div class="art-title">{{subject}}</div>
+
+        <br>
+        <pre class="art-body">{{content}}</pre>
+    </div>
+<hr>
+
+</body>
+</html>

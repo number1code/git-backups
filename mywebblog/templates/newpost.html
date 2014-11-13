@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Post new blog.</title>
+</head>
+
+<style type="text/css">
+    body {
+      font-family: sans-serif;
+      width: 800px;
+      margin: 0 auto;
+      padding: 10px;
+    }
+
+    .error {
+      color: red
+    }
+
+    label {
+      display: block;
+      font-size: 20px;
+    }
+
+    input[type=text] {
+      width: 600px;
+      font-size: 20px;
+      padding: 2px;
+      font-family: monospace;
+    }
+
+    textarea {
+      width: 600px;
+      height: 200px;
+      font-size: 17px;
+      font-family: monospace;
+    }
+
+    input[type=submit] {
+      font-size: 24px;
+    }
+
+    h1 {
+      color: white;
+      background-color: #8BCC98;
+    }
+
+    .label1 {
+      color: #7C8B88;
+    }
+
+
+</style>
+<body>
+<h1>Post new blog</h1>
+<br>
+<a href="/"><h5>home</h5></a>
+
+<form method="post">
+    <label>
+        <div class="label1">subject</div>
+        <input type="text" name="subject" value="{{subject}}">
+    </label>
+
+    <label>
+        <div class="label1">content</div>
+        <textarea name="content">{{content}}</textarea>
+    </label>
+
+    <div class="error">{{error}}</div>
+
+    <input type="submit">
+</form>
+
+
+</body>
+</html>
